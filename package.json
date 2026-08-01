@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "postinstall": "node -e \"const fs=require(\"fs\");const nm=\"node_modules\";if(fs.existsSync(nm+\"/natsu-baileys-v10\")&&!fs.existsSync(nm+\"/baileys\")){fs.symlinkSync(\"natsu-baileys-v10\",nm+\"/baileys\",\"dir\");console.log(\"symlink baileys->natsu-baileys-v10 created\");}\""
   },
   "dependencies": {
     "axios": "^1.6.0",
