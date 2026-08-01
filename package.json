@@ -8,9 +8,8 @@
     "dev": "nodemon index.js"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.18",
     "axios": "^1.6.0",
-    "baileys": "github:kinggggg444/natsu-baileys-v10",
+    "baileys": "npm:@trashcore/baileys@latest",
     "body-parser": "^1.20.2",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0",
