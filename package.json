@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "postinstall": "node -e \"const fs=require(\"fs\");const nm=\"node_modules\";if(fs.existsSync(nm+\"/natsu-baileys-v10\")&&!fs.existsSync(nm+\"/baileys\")){fs.symlinkSync(\"natsu-baileys-v10\",nm+\"/baileys\",\"dir\");console.log(\"symlink baileys->natsu-baileys-v10 created\");}\""
+    "dev": "nodemon index.js"
   },
   "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
     "axios": "^1.6.0",
-    "baileys": "github:kinggggg444/natsu-baileys-v10",
+    "baileys": "file:./packages/baileys",
     "body-parser": "^1.20.2",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0",
