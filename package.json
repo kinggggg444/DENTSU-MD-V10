@@ -8,8 +8,8 @@
     "dev": "nodemon index.js"
   },
   "dependencies": {
+    "@trashcore/baileys": "latest",
     "axios": "^1.6.0",
-    "baileys": "npm:@trashcore/baileys@latest",
     "body-parser": "^1.20.2",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0",
