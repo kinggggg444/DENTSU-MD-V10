@@ -4,8 +4,8 @@ import { translations, langMeta } from './i18n.js';
 // Proxy Netlify : le browser appelle /api/* → Netlify redirige vers Railway (pas de CORS)
 const API_URL = '/api';
 const BOT_NAME = import.meta.env.VITE_BOT_NAME || 'DENTSU MD V10';
-const DEV_NAME = import.meta.env.VITE_DEV_NAME || 'Natsu Tech';
-const BOT_IMAGE = import.meta.env.VITE_BOT_IMAGE || 'https://i.imgur.com/MtOSJqh.jpeg';
+const DEV_NAME = import.meta.env.VITE_DEV_NAME || 'NatsuTech's 🇨🇬';
+const BOT_IMAGE = import.meta.env.VITE_BOT_IMAGE || 'https://raw.githubusercontent.com/kinggggg444/DENTSU-MD-V10/main/assets/dentsu-md-v10-banner.jpg';
 const CHANNEL_LINK = import.meta.env.VITE_CHANNEL_LINK || 'https://whatsapp.com/channel/0029VbC1s7fFnSz1YhZYc01h';
 const GROUP_LINK = import.meta.env.VITE_GROUP_LINK || 'https://chat.whatsapp.com/GtXASqDdchAFvEJ95cQQ0F';
 const TELEGRAM = import.meta.env.VITE_TELEGRAM || 'https://t.me/Natsu_or_Dentsu';
@@ -42,7 +42,7 @@ function TgIcon() {
 }
 
 export default function App() {
-  const [lang, setLang] = useState('fr');
+  const [lang, setLang] = useState('en');
   const [showLangOverlay, setShowLangOverlay] = useState(true);
   const [step, setStep] = useState('form'); // form | loading | success | error
   const [number, setNumber] = useState('');
